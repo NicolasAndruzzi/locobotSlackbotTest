@@ -6,8 +6,8 @@
   "author": "Simon Reimler",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.x.x",
-    "body-parser": "^1.x.x",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
     "request": "2.56.x"
   }
 }
