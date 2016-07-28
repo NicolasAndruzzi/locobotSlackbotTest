@@ -3,14 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
   res.status(200).send('Hello world!');
 });
 
 router.post('/hello', function (req, res, next) {
   var userName = req.body.user_name;
+  console.log(req.body);
   var botPayload = {
-    text : 'Hello ' + userName + ', welcome to Devdactic Slack channel! I\'ll be your guide.'
+    text : 'Hello ' + userName + ', welcome to this test run!'
   };
   // Loop otherwise..
   if (userName !== 'slackbot') {
