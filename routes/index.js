@@ -21,11 +21,11 @@ router.post('/hello', function (req, res, next) {
 });
 
 router.post('/wfh', function (req, res, next) {
-  var botPayload = {
+  var botPay = {
     text : userName + ", you're all set to work from home today!"
   };
 
-  return res.status(200).json(botPayload);
+  return res.status(200).json(botPay);
 });
 
 module.exports = router;
