@@ -21,6 +21,7 @@ router.post('/hello', function (req, res, next) {
 });
 
 router.post('/wfh', function (req, res, next) {
+  var userName = req.body.user_name;
   var botPay = {
     text : userName + ", you're all set to work from home today!"
   };
