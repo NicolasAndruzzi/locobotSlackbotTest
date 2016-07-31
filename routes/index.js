@@ -25,7 +25,7 @@ router.post('/wfh', function (req, res, next) {
   var dateRange = req.body.text;
   var botPayload = {
     "response_type" : "in_channel",
-    "text" : userName + ", you're all set to work from home today!"
+    "text" : userName + ", you're all set to work from Home " + dateRange + "!"
   };
   return res.status(200).json(botPayload);
 });
@@ -40,7 +40,7 @@ router.post('/wfb', function (req, res, next) {
   }
   var botPayload = {
     "response_type" : "in_channel",
-    "text" : userName + ", you're all set to work from the Boulder office today!"
+    "text" : userName + ", you're all set to work from the Boulder office " + dateRange + "!"
   };
   return res.status(200).json(botPayload);
 });
@@ -50,7 +50,7 @@ router.post('/wfd', function (req, res, next) {
   var dateRange = req.body.text;
   var botPayload = {
     "response_type" : "in_channel",
-    "text" : userName + ", you're all set to work from the Denver office today!"
+    "text" : userName + ", you're all set to work from the Denver office " + dateRange + "!"
   };
   return res.status(200).json(botPayload);
 });
