@@ -23,7 +23,7 @@ router.post('/hello', function (req, res, next) {
 router.post('/wfh', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    "response_type" : "in_channel",
+    // "response_type" : "in_channel",
     "text" : userName + ", you're all set to work from home today!"
   };
   return res.status(200).json(botPayload);
@@ -32,7 +32,7 @@ router.post('/wfh', function (req, res, next) {
 router.post('/wfb', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    "response_type" : "in_channel",
+    // "response_type" : "in_channel",
     "text" : userName + ", you're all set to work from the Boulder office today!"
   };
   return res.status(200).json(botPayload);
